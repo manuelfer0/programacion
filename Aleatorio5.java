@@ -15,6 +15,7 @@ public class Aleatorio5 {
 		int p5=0;
 		int p6=0;
 		int i=0;
+		int acierto=0;
 		
 		
 		Random rt =new Random();
@@ -38,12 +39,15 @@ public class Aleatorio5 {
 		p5=sc.nextInt();
 		System.out.println("Introduce un entre 1-49 número");
 		p6=sc.nextInt();
-		while (i¡=0){
+		
+		while (i<6){
 			if((p1==n1)||(p2==n2)||(p3==n3)||(p4==n4)||(p5==n5)||(p6==n6)){
-			i++;
+				acierto++;
 		}
+	i++;
 	}
 	System.out.println("El número ganador es "+n1+","+n2+","+n3+","+n4+","+n5+","+n6);
-	System.out.println("acertaste"+i+"Números");
+	System.out.println("Tu número es "+p1+","+p2+","+p3+","+p4+","+p5+","+p6);
+	System.out.println("acertaste "+acierto+" Números");
 }
 }
